@@ -159,6 +159,7 @@ h4{
     text-decoration-style: inherit;
     margin-top: 20px;
     color: black;
+    text-transform: uppercase;
 }
 .productos{
     display: flex;
@@ -422,11 +423,16 @@ font-size: 30px;
 /* productos */
 /* productos */
 
+#main_product{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 .fuera_de_servicio_1{
-    height: 400px;
-    width: 70%;
-    margin-left: 190px;
-    position: relative;
+    width: 100%;
+    margin: 0%;
+    object-fit: cover;
 } 
 .fuera_de_servicio_2{
     text-align: center;
@@ -435,9 +441,7 @@ font-size: 30px;
     font-family: neue;
     margin-bottom: 70px;
     font-weight: bolder;
-}
-#main_product{
-    height: 700px;
+    text-decoration: underline solid 5px red;
 }
 
 /* contacto */
