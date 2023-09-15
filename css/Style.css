@@ -309,7 +309,7 @@ font-size: 30px;
     display: grid;
     height: auto;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(minmax(auto-fil, 1fr));
     grid-template-rows: repeat(3, 300px);
     grid-template-areas: "img1 img2 img2"
                         "img4 img4 img3"
@@ -330,12 +330,11 @@ font-size: 30px;
     font-size: 20px;
     text-align: center;
     margin-left: 60px;
-    margin-top: 10px;
+    margin-top: 45px;
     padding-right: 15px;
-    font-weight: 500;
+    font-weight: bold;
     height: 200px;
     overflow: scroll;
-
     grid-area: img1;
 }
 .item_2{
@@ -351,15 +350,15 @@ font-size: 30px;
     font-size: 20px;
     text-align: center;
     margin-left: 60px;
-    margin-top: 10px;
+    margin-top: 55px;
     padding-right: 15px;
-    font-weight: 500;
+    font-weight: bold;
     height: 200px;
     overflow: scroll;
     grid-area: img3;
 }
 .item_4{
-    background-image: url(../Image/0023743353.jpg);
+    background-image: url(../Image/0023743351.jpg);
     border-radius: 10px;
     border: solid rgb(33, 37, 41);
     text-align: right;
@@ -371,15 +370,15 @@ font-size: 30px;
     font-size: 20px;
     text-align: center;
     margin-left: 60px;
-    margin-top: 10px;
+    margin-top: 60px;
     padding-right: 15px;
-    font-weight: 500;
+    font-weight: bold;
     height: 200px;
     overflow: scroll;
     grid-area: img5;
 }
 .item_6{
-    background-image: url(../Image/0023743351.jpg);
+    background-image: url(../Image/0023743353.jpg);
     border-radius: 10px;
     border: solid rgb(33, 37, 41);
     text-align: right;
