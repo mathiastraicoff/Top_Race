@@ -301,27 +301,90 @@ font-size: 30px;
 
 #quienes_somos{
     background-color: white;
-    height: 670px;
+    height: 900px;
     width: 100%;
+    margin-bottom: 250px;
 }
-.encabezado{
-    margin-top: 20 px;
-    background-color: white;
-    text-transform: uppercase;
+.contenedor{
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: "img1 img2 img2"
+                        "img4 img4 img3"
+                        "img5 img6 img6";
+    grid-gap: 15px;
+    padding: 30px;
 }
-#quienes_somos p{
+.itemm{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item_1{
+    height: auto;
     font-family: neue;
     font-size: 20px;
     text-align: center;
-    padding: 30px;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding-right: 15px;
+    font-weight: 500;
+    height: 200px;
+    overflow: scroll;
+
+    grid-area: img1;
 }
-.empleados{
-    display: block;
-    height: 400px;
-    width: auto;
+.item_2{
+    background-image: url(../Image/43foto1jpg.jpg);
+    border-radius: 10px;
+    border: solid rgb(33, 37, 41);
+    grid-area: img2;
+    text-align: right;
+    object-fit: cover;
+}
+.item_3{
+    font-family: neue;
+    font-size: 20px;
     text-align: center;
-    margin-left: 320px;
-    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding-right: 15px;
+    font-weight: 500;
+    height: 200px;
+    overflow: scroll;
+    grid-area: img3;
+}
+.item_4{
+    background-image: url(../Image/0023743353.jpg);
+    border-radius: 10px;
+    border: solid rgb(33, 37, 41);
+    text-align: right;
+    object-fit: cover;
+    grid-area: img4;
+}
+.item_5{
+    font-family: neue;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding-right: 15px;
+    font-weight: 500;
+    height: 200px;
+    overflow: scroll;
+    grid-area: img5;
+}
+.item_6{
+    background-image: url(../Image/0023743351.jpg);
+    border-radius: 10px;
+    border: solid rgb(33, 37, 41);
+    text-align: right;
+    object-fit: cover;
+    grid-area: img6;
 }
 
 /* servicios */
@@ -410,5 +473,3 @@ input{
     margin-left: 20px;
     margin-top: 15px;
 }
-
-/* save */
