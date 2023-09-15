@@ -395,7 +395,7 @@ font-size: 30px;
 .servicios_main{
     display: flex;
     flex-direction: column;
-    height: 900px;
+    height: auto;
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px ;
@@ -416,6 +416,7 @@ font-size: 30px;
     width: 100%;
     margin: 0%;
     object-fit: cover;
+    margin-bottom: 50px;
 }  
 
 /* productos */
