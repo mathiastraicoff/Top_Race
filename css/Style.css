@@ -392,23 +392,13 @@ font-size: 30px;
 /* servicios */
 
 .servicios_main{
-    display: inline-block;
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px ;
     text-align: center;
-}
-.encabezado.servicios{
-    display: inline-block;
-    height: 80px;
-    width: 300px;
-    background-color: rgb(201, 201, 201);
-    margin-top: 20px;
-    margin-left: auto;
-    margin-bottom: 20px;
-    text-align: center;
-    background-color: white;
 }
 .servicios ul li{
     text-align: left;
@@ -421,9 +411,9 @@ font-size: 30px;
 }
 
 .elevadores_1{
-    height: 350px;
-    width: 900px;
-    margin-left: 180px;
+    height: 400px;
+    width: 100%;
+    margin: 0%;
     object-fit: cover;
 }  
 

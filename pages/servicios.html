@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../Image/pngwing.com.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/Style.css">
     <title>Top Race</title>
 </head>
 <body>
     <header>
-        <h1 class="logo">To<span>pRace</span></h1>
-        <h2 class="sub_logo">centro de servico</h2>
-        <nav class="barra">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./quienes_somos.html">Quienes Somos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./productos.html">Productos</a>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <h1 class="logo">To<span>pRace</span></h1>
+                <h2 class="sub_logo">centro de servicios</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/quienes_somos.html">Quienes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../pages/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/productos.html">Productos</a>
+                    <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            </div>
+            </div>
         </nav>
     </header>
     <main class="servicios_main">
-        <h4 class="encabezado servicios">servicios</h4>
+        <h4>SERVICIOS</h4>
             <div class="servicios">
                 <ul>
                     <li>Alineacion</li>
@@ -35,20 +47,42 @@
                 </ul>
             </div>
     </main>
-    <section>
-            <img class="elevadores_1" src="../Image/el-taller-srl-san-juan-edit-01.png" alt="elevadores">
-    </section>
-    <footer>
-        <p id="footer">veninos a visitar!!</p><br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.569489292375!2d-58.281348!3d-34.7015888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33202134ed087%3A0x6245d4818cb323ad!2sToprace%20Bernal%20Este%20Sa!5e0!3m2!1ses-419!2sar!4v1692660134522!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div><img class="marcas" src="../Image/pendon-de-marcas-ok-1-scaled.jpg.webp" alt=""></div>
-        <div class="redes">
-            <p>NUESTRAS REDES</p>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-    </footer>      
+    <div>
+        <img class="elevadores_1" src="../Image/el-taller-srl-san-juan-edit-01.png" alt="elevadores">
+    </div>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h5>Veni a vistarnos</h5>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.569489292375!2d-58.281348!3d-34.7015888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33202134ed087%3A0x6245d4818cb323ad!2sToprace%20Bernal%20Este%20Sa!5e0!3m2!1ses-419!2sar!4v1692660134522!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h5>Mapa del sitio</h5>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="../pages/quienes_somos.html">Quienes somos</a></li>
+                            <li><a href="../pages/servicios.html">Servicios</a></li>
+                            <li><a href="../pages/productos.html">Productos</a></li>
+                            <li><a href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item marcas">
+                    <h5>Nuestras Marcas</h5>
+                    <img class="marcas_" src="../Image/pendon-de-marcas-ok-1-scaled.jpg.webp" alt="marcas">
+                    </div>
+                    <div class="col item social">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <p class="copyright">Top Race © 2023</p>
+            </div>
+        </footer>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
