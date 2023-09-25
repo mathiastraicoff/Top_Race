@@ -54,17 +54,17 @@ main{
     background-color: rgb(255, 255, 255);
     margin-bottom: 50px ;
 }
-.index{
+.index_{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     height: 80%;
     width: 100%;
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient(rgb(255, 255, 255), rgba(52, 52, 52, 0.158)),
-                    url("../Image/fondo\ ico\ aceite\ y\ filtro.jpg");
-    background-size: cover;
-                    object-fit: cover;
+                    url("../Image/fondo\ ico\ aceite\ y\ filtro.jpg") ;
+    background-size: auto;
+    object-fit: cover;
 }
 h1{
     display: flex;
