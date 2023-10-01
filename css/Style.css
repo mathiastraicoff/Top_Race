@@ -13,13 +13,13 @@
 /* header */
 /* header */
 header {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica $fontprimaria", sans-serif;
   font-size: 22px;
 }
 
 .logo {
   float: left;
-  font-family: neue;
+  font-family: "neue";
   text-decoration: underline rgb(198, 41, 41);
   font-size: 45px;
   font-weight: bold;
@@ -32,7 +32,7 @@ header {
 
 h2.sub_logo {
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica $fontprimaria", sans-serif;
   font-size: 14px;
   font-weight: 500;
   padding-left: 67px;
@@ -49,7 +49,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height: 600px;
+  height: auto;
   width: 100%;
   background-color: rgb(255, 255, 255);
   margin-bottom: 50px;
@@ -83,7 +83,7 @@ h1 {
 
 .logo1 {
   display: flex;
-  font-family: neue;
+  font-family: "neue";
   text-decoration: underline rgb(198, 41, 41);
   font-size: 80px;
   font-weight: bolder;
@@ -147,7 +147,7 @@ h3 {
   background-color: rgb(33, 37, 41);
   color: white;
   text-align: center;
-  font-family: neue;
+  font-family: "neue";
   font-size: 30px;
   padding: 10px;
   border: 3px solid rgb(198, 41, 41);
@@ -159,7 +159,7 @@ h3 {
 h4 {
   text-align: center;
   font-size: 40px;
-  font-family: neue;
+  font-family: "neue";
   text-decoration: 8px underline rgb(198, 41, 41);
   font-style: italic;
   font-weight: bold;
@@ -223,8 +223,14 @@ iframe {
   width: 250px;
   size: 10px;
   position: relative;
+  margin-left: 25px;
 }
 
+@media (max-width: 1400px) {
+  .iframe_1 {
+    margin-left: 2px;
+  }
+}
 .footer-dark ul {
   padding: 0;
   list-style: none;
@@ -313,7 +319,7 @@ iframe {
   background-color: white;
   height: 100%;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .container {
@@ -328,13 +334,13 @@ iframe {
   font-size: 22px;
   margin: 40px;
   align-items: center;
-  font-family: neue;
+  font-family: "neue";
 }
 
 #qs_img1, #qs_img2, #qs_img3 {
   width: 550px;
   height: 300px;
-  margin: 40px;
+  margin: 20px;
   border: solid 2px black;
 }
 
@@ -344,7 +350,7 @@ iframe {
 
 #qs_img2 {
   float: left;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 #qs_img3 {
@@ -366,6 +372,7 @@ iframe {
     width: 300px;
     height: 250px;
     align-items: center;
+    object-fit: cover;
   }
 }
 /* servicios */
@@ -378,28 +385,35 @@ iframe {
   height: auto;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 50px;
   text-align: center;
 }
 
+.servicios {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(33, 37, 41));
+}
 .servicios ul li {
-  text-align: left;
+  color: black;
+  text-align: center;
   font-size: 30px;
   font-weight: 700;
-  padding-left: 4px;
-  margin: 30px;
   margin-top: 50px;
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 .elevadores_1 {
   height: 400px;
   width: 100%;
-  margin: 0%;
   object-fit: cover;
   margin-bottom: 50px;
 }
 
+@media (max-width: 700px) {
+  .elevadores_1 {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 /* productos */
 /* productos */
 /* productos */
@@ -421,7 +435,7 @@ iframe {
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
-  font-family: neue;
+  font-family: "neue";
   margin-bottom: 70px;
   font-weight: bolder;
   text-decoration: underline solid 5px rgb(198, 41, 41);
@@ -432,9 +446,10 @@ iframe {
 /* contacto */
 /* contacto */
 .contacto_main {
-  display: inline-block;
   height: 600px;
   width: 100%;
+  text-align: center;
+  justify-content: center;
   background-color: rgb(255, 255, 255);
   margin-bottom: 50px;
   text-align: center;
@@ -442,18 +457,24 @@ iframe {
 
 .bigicon {
   font-size: 20px;
+  padding: 10px;
   color: rgb(198, 41, 41);
 }
 
 .btn-primary {
   font-size: 35px;
-  color: #ff3636;
-  color: #fff;
+  color: rgb(198, 41, 41);
+  color: rgb(255, 255, 255);
   background-color: rgb(198, 41, 41);
   opacity: 90%;
   border-color: #000000;
   border: solid 2px black;
   margin: 15px;
+}
+
+.btn-primary:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(33, 37, 41);
 }
 
 /*# sourceMappingURL=Style.css.map */

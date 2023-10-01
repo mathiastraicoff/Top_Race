@@ -1,6 +1,10 @@
 // paleta de colores
 $colorprimario: rgb(198, 41, 41);
+$colorsecundario: rgb(33, 37, 41);
+$colorterceario: rgb(255, 255, 255);
 
+// fuentes
+$fontprimaria: 'neue';
 
 @font-face {
     font-family: neue;
@@ -18,23 +22,23 @@ $colorprimario: rgb(198, 41, 41);
 /* header */
 
 header{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica $fontprimaria', sans-serif;
     font-size: 22px;
 }
 .logo{
     float: left;
-    font-family:neue;
+    font-family:$fontprimaria;
     text-decoration: underline $colorprimario;
     font-size: 45px;
     font-weight: bold;
     color: white;
 }
 .logo span{
-    text-decoration:underline rgb(33, 37, 41);
+    text-decoration:underline $colorsecundario;
 }
 h2.sub_logo{ 
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica $fontprimaria', sans-serif;
     font-size: 14px;
     font-weight: 500;
     padding-left: 67px;
@@ -53,9 +57,9 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 600px;
+    height: auto;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: $colorterceario;
     margin-bottom: 50px ;
 }
 .index_{
@@ -64,8 +68,8 @@ main{
     flex-wrap: nowrap;
     height: 80%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    background-image: linear-gradient(rgb(255, 255, 255), rgba(52, 52, 52, 0.158)),
+    background-color: $colorterceario;
+    background-image: linear-gradient($colorterceario, rgba(52, 52, 52, 0.158)),
                     url("../Image/fondo\ ico\ aceite\ y\ filtro.jpg") ;
     background-size: auto;
     object-fit: cover;
@@ -85,7 +89,7 @@ h1{
 }
 .logo1{
     display: flex;
-    font-family:neue;
+    font-family:$fontprimaria;
     text-decoration: underline $colorprimario;
     font-size: 80px;
     font-weight: bolder;
@@ -141,10 +145,10 @@ h3{
 }
 .intro_1 {
     text-align: center;
-    background-color: rgb(33, 37, 41);
+    background-color: $colorsecundario;
     color: white;
     text-align: center;
-    font-family: neue;
+    font-family: $fontprimaria;
     font-size: 30px;
     padding: 10px;
     border: 3px solid $colorprimario;
@@ -156,7 +160,7 @@ h3{
 h4{
     text-align: center;
     font-size: 40px;
-    font-family: neue;
+    font-family: $fontprimaria;
     text-decoration: 8px underline $colorprimario;
     font-style: italic;
     font-weight: bold;
@@ -201,7 +205,7 @@ h4{
 .footer-dark {
     padding:50px 0;
     color:#f0f9ff;
-    background-color: rgb(33, 37, 41);
+    background-color: $colorsecundario;
 }
 
 .footer-dark h5 {
@@ -221,6 +225,13 @@ iframe{
     width: 250px;
     size: 10px;
     position: relative;
+    margin-left: 25px;
+}
+
+@media (max-width: 1400px){
+    .iframe_1{
+        margin-left: 2px;
+    }
 }
 
 .footer-dark ul {
@@ -308,25 +319,26 @@ font-size: 30px;
     background-color: white;
     height: 100%;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .container{
     width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
+
     }
 .container p{
     text-align: justify;
     font-size: 22px;
     margin: 40px;
     align-items: center;
-    font-family: neue;
+    font-family: $fontprimaria;
     }
 #qs_img1, #qs_img2, #qs_img3{
     width: 550px;
     height: 300px;
-    margin: 40px;
+    margin: 20px;
     border: solid 2px black;
 }
 #qs_img1{
@@ -334,7 +346,7 @@ font-size: 30px;
 }
 #qs_img2{
     float: left;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 #qs_img3{
     float: right;
@@ -353,6 +365,7 @@ font-size: 30px;
         width: 300px;
         height: 250px;
         align-items: center;
+        object-fit: cover;
     }
 }
 
@@ -366,28 +379,36 @@ font-size: 30px;
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 50px ;
+    background-color: $colorterceario;
+    // margin-bottom: 50px;
     text-align: center;
 }
-.servicios ul li{
-    text-align: left;
-    font-size: 30px;
-    font-weight: 700;
-    padding-left: 4px;
-    margin: 30px;
-    margin-top: 50px;
-    list-style-type: circle;
+.servicios{
+    background-image:linear-gradient($colorterceario, $colorsecundario); 
+    ul{
+        li{
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 50px;
+            list-style-type: none;
+        } 
+    }
 }
-
 .elevadores_1{
     height: 400px;
     width: 100%;
-    margin: 0%;
     object-fit: cover;
     margin-bottom: 50px;
 }  
-
+@media (max-width: 700px){
+    .elevadores_1{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 /* productos */
 /* productos */
 /* productos */
@@ -408,7 +429,7 @@ font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
-    font-family: neue;
+    font-family: $fontprimaria;
     margin-bottom: 70px;
     font-weight: bolder;
     text-decoration: underline solid 5px $colorprimario;
@@ -421,24 +442,46 @@ font-size: 30px;
 
 
 .contacto_main{
-    display: inline-block;
+    // display: flex;
     height: 600px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    background-color: $colorterceario;
     margin-bottom: 50px ;
     text-align: center;
 }
 .bigicon {
     font-size: 20px;
+    padding: 10px;
     color: $colorprimario;
 }
 .btn-primary {
     font-size: 35px;
-    color: #ff3636;
-    color: #fff;
+    color: $colorprimario;
+    color: $colorterceario;
     background-color: $colorprimario;
     opacity: 90%;
     border-color: #000000;
     border: solid 2px black;
     margin: 15px;
 }
+
+.btn-primary:hover{
+    color: $colorterceario;
+    background-color: $colorsecundario;
+}
+// .container.contacto{
+//     display: flex;    
+//     align-items: center;
+//     justify-content: center;
+// }
+// .form-group{
+//     width: 500px;
+//     margin-left: 200px;
+// }
+// @media (max-width: 700px){
+//     container.contacto{
+
+//     }
+// }
