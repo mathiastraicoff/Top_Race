@@ -470,13 +470,14 @@ iframe {
   background-color: rgb(198, 41, 41);
   opacity: 90%;
   border-color: #000000;
-  border: solid 2px black;
+  border: solid 2px rgb(33, 37, 41);
   margin: 15px;
 }
 
 .btn-primary:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 37, 41);
+  border: solid 2px rgb(198, 41, 41);
 }
 
 .form-horizontal {

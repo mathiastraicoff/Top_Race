@@ -464,13 +464,14 @@ font-size: 30px;
     background-color: $colorprimario;
     opacity: 90%;
     border-color: #000000;
-    border: solid 2px black;
+    border: solid 2px $colorsecundario;
     margin: 15px;
 }
 
 .btn-primary:hover{
     color: $colorterceario;
     background-color: $colorsecundario;
+    border: solid 2px $colorprimario;
 }
 .form-horizontal{
     display: flex;
