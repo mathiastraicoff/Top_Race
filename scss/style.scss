@@ -442,7 +442,7 @@ font-size: 30px;
 
 
 .contacto_main{
-    // display: flex;
+    display: inline-block;
     height: 600px;
     width: 100%;
     text-align: center;
@@ -455,6 +455,7 @@ font-size: 30px;
     font-size: 20px;
     padding: 10px;
     color: $colorprimario;
+    align-items: center;
 }
 .btn-primary {
     font-size: 35px;
@@ -471,17 +472,23 @@ font-size: 30px;
     color: $colorterceario;
     background-color: $colorsecundario;
 }
-// .container.contacto{
-//     display: flex;    
-//     align-items: center;
-//     justify-content: center;
-// }
-// .form-group{
-//     width: 500px;
-//     margin-left: 200px;
-// }
-// @media (max-width: 700px){
-//     container.contacto{
-
-//     }
-// }
+.form-horizontal{
+    display: flex;
+    justify-content: center;
+}
+.form-group{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: solid 3px black;
+}
+@media (max-width: 700px){
+    .form-group{
+        margin-left: 0px;
+        width: 450px;
+    }
+    .form-control{
+        width: 400px;
+    }
+}
