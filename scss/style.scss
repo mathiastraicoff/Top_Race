@@ -209,9 +209,10 @@ h4{
 .produ_ img{
     height: 200px;
     width: 200px;
-    object-fit: cover;
+    object-fit: contain;
     border: solid 2px black;
     border-radius: 8px;
+    background-color: white;
 }
 
 
@@ -465,7 +466,7 @@ font-size: 30px;
 .transition{
     height: 250px;
     width: 400px;
-    transition: heigth 1s, width 1s;
+    transition: heigth 1.5s, width 1.5s;
 }
 
 
