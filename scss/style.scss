@@ -415,24 +415,61 @@ font-size: 30px;
 /* productos */
 
 #main_product{
-    height: auto;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-.fuera_de_servicio_1{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
     width: 100%;
-    margin: 0%;
-    object-fit: cover;
-} 
-.fuera_de_servicio_2{
+    background-color: $colorterceario;
+    margin-bottom: 50px;
+}
+.productosp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 40px;
     font-family: $fontprimaria;
-    margin-bottom: 70px;
-    font-weight: bolder;
-    text-decoration: underline solid 5px $colorprimario;
+    text-transform: uppercase;
+    text-decoration: underline solid 2px $colorprimario;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.paceite-item, .pfiltro-item, .pfaire-item {
+	height: 250px;
+	width: 400px;
+	border: 2px solid $colorsecundario;
+}
+@each $prod in paceite, pfiltro, pfaire {
+	.#{$prod}-item {
+		background-image: url(../Image/#{$prod}.jpg);
+		background-size: cover;
+		background-position: center;
+        margin: 20px;
+		filter: grayscale(80%);
+	}
+}
+
+@each $prod in paceite, pfiltro, pfaire {
+	.#{$prod}-item:hover {
+        filter: grayscale(0%);
+        border: 2px solid $colorprimario;
+    }
+}
+@media (max-width: 400px){
+    .paceite-item, .pfiltro-item, .pfaire-item{
+        height: 200px;
+        width: 275px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
 
 /* contacto */
@@ -482,7 +519,6 @@ font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // border: solid 3px black;
 }
 @media (max-width: 700px){
     .form-group{
