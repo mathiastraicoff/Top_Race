@@ -1,0 +1,9 @@
+*optimizacion de imagenes.
+*agregado de etiquetas meta description y meta keywords en todos los html.
+*utilizacion de la etiqueta strong.
+*utlizacion de sass a traves de scss.
+*utilizacion de animaciones.
+*correccion de las observaciones de la ultima pre entrega.
+*rediseñado completo de la pagina de servicios.
+*correciones varias en el codigo para simplificar terminos.
+
