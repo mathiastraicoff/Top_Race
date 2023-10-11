@@ -463,7 +463,7 @@ font-size: 30px;
 .transition{
     height: 250px;
     width: 400px;
-    transition: heigth 1s, width 1s;
+    transition: heigth 0.1s, width 0.1s;
 }
 
 
@@ -486,8 +486,8 @@ font-size: 30px;
 	.#{$prod}-item:hover {
         filter: grayscale(0%);
         border: 4px solid $color_red;
-        height: 300px;
-        width: 450px;
+        height: 260px;
+        width: 410px;
     }
 }
 @media (max-width: 400px){
